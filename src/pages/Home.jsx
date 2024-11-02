@@ -1,3 +1,9 @@
+import { Introduction } from "../components/Introduction";
+
 export const Home = () => {
-  return <section></section>;
+  return (
+    <section className="home">
+      <Introduction />
+    </section>
+  );
 };

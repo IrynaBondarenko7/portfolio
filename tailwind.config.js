@@ -17,11 +17,13 @@ const config = {
         },
       },
       colors: {
-        bgColor: "#17202a",
+        bgColor: "#0e0d0d",
         textColor: "#f4f6f7",
+        minorTextColor: "#707479",
       },
       fontFamily: {
         "bona-nova": ['"Bona Nova SC"', "serif"],
+        "dancing-script": ['"Dancing Script"', "cursive"],
       },
     },
   },
