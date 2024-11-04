@@ -10,14 +10,15 @@ const config = {
       container: {
         center: true,
         padding: {
-          DEFAULT: "40px",
-          sm: "40px",
+          DEFAULT: "20px",
+          sm: "20px",
           md: "25px",
           xl: "30px",
         },
       },
       colors: {
         bgColor: "#0e0d0d",
+        secondBg: "rgba(12, 12, 12, 0.4)",
         textColor: "#f4f6f7",
         minorTextColor: "#707479",
       },

@@ -8,7 +8,7 @@ body {
   @apply bg-bgColor text-textColor;
 }
 #root {
-  height: 100vh;
+  min-height: 690px;
 }
 
 .home {
@@ -17,10 +17,39 @@ body {
       rgba(12, 12, 12, 0.2)
     ),
     url("/images/bg-img.png");
-  height: 100vh;
+  min-height: 690px;
   background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-position: 600px 1px;
+  background-position: 45px 37px;
   background-size: contain;
   overflow-y: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    background-position: 300px;
+    min-height: 610px;
+  }
+
+  #root {
+    min-height: 610px;
+  }
+  .home::after {
+    content: "";
+    width: 589px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    background-position: 600px 1px;
+  }
+  .home::after {
+    width: 870px;
+    right: 148px;
+  }
 }
