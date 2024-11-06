@@ -53,3 +53,35 @@ body {
     right: 148px;
   }
 }
+
+.burger-item {
+  background-image: linear-gradient(to right, #f2f4f4, #f2f4f4 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-item::before {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-item:hover {
+  background-position: 0;
+}
+
+.burger-item:hover::before {
+  width: 100%;
+}
