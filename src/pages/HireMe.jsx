@@ -2,7 +2,7 @@ import { CommunicationForm } from "../components/СommunicationForm";
 
 export const HireMe = () => {
   return (
-    <section>
+    <section className="mt-24">
       <CommunicationForm />
     </section>
   );

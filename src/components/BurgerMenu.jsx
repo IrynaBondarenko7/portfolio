@@ -41,7 +41,7 @@ export const BurgerMenu = () => {
               >
                 <Button
                   aria-label="close menu"
-                  className="block ml-auto mb-20 rounded-md bg-gray-700 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                  className=" ml-auto mb-20 py-1.5 text-sm/6 font-semibold text-white focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
                   onClick={closeMenu}
                 >
                   <MdClose />
