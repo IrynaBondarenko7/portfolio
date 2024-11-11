@@ -1,5 +1,11 @@
-const config = {
-  content: ["./index.html", "./pages/**/*.{jsx,js}", "./src/**/*.{js,jsx}"],
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     screens: {
       sm: "480px",
@@ -29,5 +35,4 @@ const config = {
     },
   },
   plugins: [],
-};
-export default config;
+} satisfies Config;

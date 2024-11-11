@@ -1,7 +1,19 @@
+import React from "react";
+import { Dispatch, SetStateAction } from "react";
 import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { MdClose } from "react-icons/md";
 
-export const PopUp = ({ isOpen, setIsOpen, emailError }) => {
+type PopUpPropsType = {
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+  emailError: boolean;
+};
+
+export const PopUp: React.FC<PopUpPropsType> = ({
+  isOpen,
+  setIsOpen,
+  emailError,
+}) => {
   function close() {
     setIsOpen(false);
   }

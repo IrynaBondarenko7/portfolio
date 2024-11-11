@@ -1,4 +1,4 @@
-import { PersonalInfo } from "./PersonalInfo";
+import { PersonalInfo } from "./PersonalInfo ";
 
 export const Introduction = () => {
   return (

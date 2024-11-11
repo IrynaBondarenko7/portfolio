@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useState } from "react";
 import {
   Field,
@@ -11,10 +12,11 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import clsx from "clsx";
 import emailjs from "@emailjs/browser";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler, UseFormReturn } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { PopUp } from "./PopUp";
+import { PopUp } from "./PopUp ";
+import { type FormValuesType } from "@/components/types/type";
 
 const schema = yup
   .object({
@@ -33,34 +35,40 @@ const schema = yup
 export const CommunicationForm = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [emailError, setEmailError] = useState(false);
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm({ mode: "onChange", resolver: yupResolver(schema) });
+  }: UseFormReturn<FormValuesType> = useForm<FormValuesType>({
+    mode: "onChange",
+    resolver: yupResolver(schema),
+  });
 
-  const sendEmail = () => {
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        }
-      )
-      .then(
-        () => {
-          reset();
-          setIsOpen(true);
-        },
-        (error) => {
-          setEmailError(true);
-          setIsOpen(true);
-        }
-      );
+  const sendEmail: SubmitHandler<FormValuesType> = () => {
+    if (form.current) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID || "",
+          process.env.NEXT_PUBLIC_TEMPLATE_ID || "",
+          form.current,
+          {
+            publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY || "",
+          }
+        )
+        .then(
+          () => {
+            reset();
+            setIsOpen(true);
+          },
+          (error) => {
+            setEmailError(true);
+            setIsOpen(true);
+          }
+        );
+    }
   };
   return (
     <>
@@ -75,7 +83,7 @@ export const CommunicationForm = () => {
             Please provide the following details about the job
           </Legend>
           <Field className="relative">
-            <Label className="text-sm/6 font-medium text-white">
+            <Label className="text-sm/6 font-medium text-white ml-3">
               Your name *
             </Label>
             <Input
@@ -90,7 +98,7 @@ export const CommunicationForm = () => {
             </p>
           </Field>
           <Field className="relative">
-            <Label className="text-sm/6 font-medium text-white">
+            <Label className="text-sm/6 font-medium text-white ml-3">
               Company name *
             </Label>
             <Input
@@ -105,7 +113,9 @@ export const CommunicationForm = () => {
             </p>
           </Field>
           <Field className="relative">
-            <Label className="text-sm/6 font-medium text-white">Email *</Label>
+            <Label className="text-sm/6 font-medium text-white ml-3">
+              Email *
+            </Label>
             <Input
               {...register("email")}
               className={clsx(
@@ -118,7 +128,7 @@ export const CommunicationForm = () => {
             </p>
           </Field>
           <Field>
-            <Label className="text-sm/6 font-medium text-white">
+            <Label className="text-sm/6 font-medium text-white ml-3">
               Suggested position
             </Label>
             <div className="relative">
@@ -142,7 +152,7 @@ export const CommunicationForm = () => {
             </div>
           </Field>
           <Field>
-            <Label className="text-sm/6 font-medium text-white">
+            <Label className="text-sm/6 font-medium text-white ml-3">
               Additional Information
             </Label>
             <Textarea

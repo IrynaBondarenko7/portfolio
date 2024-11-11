@@ -1,0 +1,150 @@
+[
+  {
+    "name": "Hotel complex Mimino",
+    "gitHubLink": "https://github.com/yulka-pulka/team5-mimino",
+    "livePageLink": "https://yulka-pulka.github.io/team5-mimino/",
+    "description": "Restaurant/hotel complex website with responsive layout. Functions: room reservation modal window, buttons animation, room page (amenities in the room).",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "JavaScript",
+      "Parcel",
+      "Swiper",
+      "Animate.css."
+    ],
+    "type": "team",
+    "id": 1
+  },
+  {
+    "name": "Filmoteka",
+    "gitHubLink": "https://github.com/dmitryberesten/filmoteka",
+    "livePageLink": "https://dmitryberesten.github.io/filmoteka/",
+    "description": "Application for choosing a movie and saving in library. Functions: add to watched, add to queue buttons and saving to local storage.",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "JavaScript",
+      "REST API",
+      "AJAX",
+      "Parcel",
+      "Swiper",
+      "Animate.css",
+      "Basiclightbox",
+      "Notiflix"
+    ],
+    "type": "team",
+    "id": 2
+  },
+  {
+    "name": "Goose Track",
+    "gitHubLink": "https://github.com/svrphoenix/project-group3fe",
+    "livePageLink": "https://svrphoenix.github.io/project-group3fe/",
+    "description": "Full Stack app with user registration. Functions: The registered user has access to the account page, where user can edit the profile, to the calendar page, add tasks for any day of the week, and the statistics page, where it is possible to view the completion of tasks. There is also an opportunity to leave a review in the app.",
+    "technologies": [
+      "React",
+      "Hooks ",
+      "Routers",
+      "Redux Toolkit",
+      "Webpack",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Styled components",
+      "REST API"
+    ],
+    "type": "team",
+    "id": 3
+  },
+  {
+    "name": "Flora Decor Store",
+    "gitHubLink": "https://github.com/SoftRyzen-internship/flora-decor",
+    "livePageLink": "https://flora-decor.vercel.app/",
+    "description": "The web application Flora Decor was created for a Ukrainian indoor plant store. The website features a responsive design that adjusts to various screen sizes, including mobile phones (from 360px to 480px), tablets (768px), and desktops (1440px). All images on the website have support for Retina displays, ensuring high-quality visuals for users with high-resolution screens.The goods section and reviews have the capability to be edited through the admin panel in Sanity CMS.",
+    "technologies": [
+      "Next.js",
+      "Sanity",
+      "TypeScript",
+      "Tailwindcss",
+      "Headless CMS",
+      "Swiper",
+      "React-scroll",
+      "React-hook-form",
+      "svgr",
+      "Classnames",
+      "GROQ",
+      "React-responsive",
+      "Yup"
+    ],
+    "type": "team",
+    "id": 4
+  },
+  {
+    "name": "Career consultant web site",
+    "gitHubLink": "https://github.com/SoftRyzen-internship/career-consultant",
+    "livePageLink": "https://career-consultations.vercel.app/",
+    "description": "Career consultant is a web application aimed at career counseling for Ukrainians who want to receive a clear action plan, practical tools, and support. Website consists from 2 pages: Main & Privacy Policy.The layout is responsive and cross-browser compatible - mobile starts from 360px, tablet from 768px, desktop from 1280px. The layout from 360px to 480px is fluid (stretchable). Used mobile-first approach.",
+    "technologies": [
+      "Next.js",
+      "Sanity",
+      "TypeScript",
+      "Tailwindcss",
+      "Headless CMS",
+      "Swiper",
+      "React-scroll",
+      "React-hook-form",
+      "svgr",
+      "Classnames",
+      "GROQ",
+      "Yup"
+    ],
+    "type": "team",
+    "id": 5
+  },
+  {
+    "name": "Hidden Gems API",
+    "gitHubLink": "https://github.com/espiers13/hidden-gems",
+    "livePageLink": "https://hidden-gems-cd0h.onrender.com/api",
+    "description": "API built for the purpose of accessing application data programatically for a front end application. This is the backend service which provides information about events and places in Manchester, user information, and comment information, and provides this information to the front end architecture.",
+    "technologies": [
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Node - postgres",
+      "Dotenv",
+      "Pg - format",
+      "Jest",
+      "Supertest",
+      "Husky",
+      "Cors"
+    ],
+    "type": "team",
+    "id": 6
+  },
+  {
+    "name": "Hidden Gems APP",
+    "gitHubLink": "https://github.com/flynnjim/hidden-gems-frontend",
+    "livePageLink": "https://hidden-gems-frontend.vercel.app/",
+    "description": "Full stack web app that allows users to discover, review, and comment on hidden gems (places) using a Next.js frontend and a Node.js backend. Users can explore hidden gems, create new hidden gems, submit reviews, and engage with the platform through dynamic content rendering.",
+    "technologies": [
+      "Next.js",
+      "Tailwindcss",
+      "Firebase",
+      "Leaflet",
+      "Headlessui",
+      "React-hook-form",
+      "Yup",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Node - postgres",
+      "Dotenv",
+      "Pg - format",
+      "Jest",
+      "Supertest",
+      "Husky",
+      "Cors"
+    ],
+    "type": "team",
+    "id": 7
+  }
+]
