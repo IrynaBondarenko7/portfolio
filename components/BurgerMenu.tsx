@@ -1,8 +1,10 @@
+"use client";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { Fragment, useState } from "react";
 import { Button, Dialog, DialogPanel, Transition } from "@headlessui/react";
 import { MdClose } from "react-icons/md";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -49,22 +51,22 @@ export const BurgerMenu = () => {
                 <div className="flex flex-col justify-center items-center gap-5">
                   <ul className="flex flex-col gap-2 font-bona-nova items-center">
                     <li className="burger-item">
-                      <Link to="/projects" onClick={closeMenu}>
+                      <Link href="/projects" onClick={closeMenu}>
                         Secret Projects
                       </Link>
                     </li>
                     <li className="burger-item">
-                      <Link to="/hireme" onClick={closeMenu}>
+                      <Link href="/hireme" onClick={closeMenu}>
                         Hire me
                       </Link>
                     </li>
                     <li className="burger-item">
-                      <Link to="/contacts" onClick={closeMenu}>
+                      <Link href="/contacts" onClick={closeMenu}>
                         Contacts
                       </Link>
                     </li>
                     <li className="burger-item">
-                      <Link to="/" onClick={closeMenu}>
+                      <Link href="/" onClick={closeMenu}>
                         Home
                       </Link>
                     </li>

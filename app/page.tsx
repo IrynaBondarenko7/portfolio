@@ -1,9 +1,9 @@
-import { Introduction } from "../components/Introduction";
+import { Introduction } from "@/components/Introduction";
 
-export const Home = () => {
+export default function Home() {
   return (
     <section className="home flex relative">
       <Introduction />
     </section>
   );
-};
+}
