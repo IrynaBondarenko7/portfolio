@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { ProjectType } from "@/components/types/type";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "React, Next.js, Javascript projects",
+};
 
 async function fetchProjects(): Promise<ProjectType[]> {
   const response = await fetch("http://localhost:3000/api/projects/");

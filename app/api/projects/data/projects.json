@@ -146,5 +146,134 @@
     ],
     "type": "team",
     "id": 7
+  },
+  {
+    "name": "Masseur website",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/masseur_website",
+    "livePageLink": "https://massage-therapist-kyiv.netlify.app/",
+    "description": "Massage Therapist portfolio with 4 section. Functions: there is a Book Appointment button on the homepage that opens a modal window with a feedback form. You can also view procedures and materials.",
+    "technologies": [
+      "HTML",
+      "SASS",
+      "JavaScript",
+      "Parcel",
+      "AOS",
+      "Formspree"
+    ],
+    "type": "individual",
+    "id": 8
+  },
+  {
+    "name": "Barbershop",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/barbershop",
+    "livePageLink": "https://irynabondarenko7.github.io/barbershop/",
+    "description": "A website with a responsive layout.",
+    "technologies": ["HTML", "SASS", "JavaScript", "Parcel"],
+    "id": 9
+  },
+  {
+    "name": "English test",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/english-test",
+    "livePageLink": "https://irynabondarenko7.github.io/english-test/",
+    "description": "Quick English quiz with adaptive design. Functions: You receive points at the end of the test and have the opportunity to take the test again",
+    "technologies": ["HTML", "LESS", "JavaScript", "Parcel"],
+    "type": "individual",
+    "id": 10
+  },
+  {
+    "name": "Phonebook",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/Phonebook",
+    "livePageLink": "https://irynabondarenko7.github.io/Phonebook/",
+    "description": "A simple phonebook connected to Swagger backend API. Functions: You can register, log in, log out, add, remove or filter contacts. ",
+    "technologies": [
+      "React",
+      "Hooks",
+      "Routers",
+      "Redux Toolkit",
+      "Chakra UI",
+      "Formik",
+      "Yup",
+      "REST API"
+    ],
+    "type": "individual",
+    "id": 11
+  },
+  {
+    "name": "Сonfetti",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/confetti",
+    "livePageLink": "https://balloons-shop-confetti.netlify.app/",
+    "description": "Confetti Store Landing Page, a React-based landing page for a balloon shop. This landing page incorporates various features and functionalities to create an engaging and responsive user experience. The responsive layout spans from mobile (360px to 480px) with a flexible design, to tablet (768px), and desktop (1280px)",
+    "technologies": [
+      "React",
+      "Hooks",
+      "Styled components",
+      "Swiper",
+      "Formik",
+      "Yup",
+      "React-responsive"
+    ],
+    "type": "individual",
+    "id": 12
+  },
+  {
+    "name": "CarpTravel - Adventure Travel Website",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/carp-travel",
+    "livePageLink": "https://carp-travel-alpha.vercel.app/",
+    "description": "CarpTravel, your go-to platform for thrilling adventures in the Carpathian Mountains. Whether you're into rock climbing, hot air ballooning, skydiving, rafting, or ATVS Traveling has got you covered. Explore the adrenaline-packed experiences waiting for you in the heart of nature. Adaptive and cross-browser responsive design, mobile starts from 360px, tablet from 768px, desktop from 1280px",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwindcss",
+      "Swiper",
+      "React-scroll",
+      "React-hook-form",
+      "React-hot-toast"
+    ],
+    "type": "individual",
+    "id": 13
+  },
+  {
+    "name": "News API",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/news_API",
+    "livePageLink": "https://news-api-4de7.onrender.com/",
+    "description": "A backend API that provides news data to a front-end client. Configured to work in different environments (development, testing, etc.). The /api endpoint serves as a representation of all the available endpoints of the api.",
+    "technologies": [
+      "Node.js",
+      "express.js",
+      "PostgreSQL",
+      "Node - postgres",
+      "Dotenv",
+      "Pg - format",
+      "Jest",
+      "Supertest"
+    ],
+    "type": "individual",
+    "id": 14
+  },
+  {
+    "name": "News APP",
+    "gitHubLink": "https://github.com/IrynaBondarenko7/news_App",
+    "livePageLink": "https://iryna-bd-trend-news.netlify.app/",
+    "description": "Full-stack responsive app with React front end and Node.js back end. Users can view news articles, leave and delete comments, and sort articles by topic, date, number of comments, and votes.",
+    "technologies": [
+      "React",
+      "Routers",
+      "React icons",
+      "React-select",
+      "Swiper",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Node - postgres",
+      "Dotenv",
+      "Pg - format",
+      "Jest",
+      "Supertest",
+      "React-select",
+      "React-hot-toast",
+      "Headlessui"
+    ],
+    "type": "individual",
+    "id": 15
   }
 ]
