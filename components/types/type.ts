@@ -7,11 +7,17 @@ export type FormValuesType = {
 };
 
 export type ProjectType = {
-  name: string;
-  gitHubLink: string;
-  livePageLink: string;
-  description: string;
-  technologies: string[];
   type: string;
-  id: number;
+  projects: [
+    {
+      name: string;
+      gitHubLink: string;
+      livePageLink: string;
+      description: string;
+      technologies: string[];
+      type: string;
+      imgLink: string;
+      id: number;
+    }
+  ];
 };
