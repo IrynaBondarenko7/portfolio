@@ -20,7 +20,6 @@ async function fetchProjects(): Promise<ProjectType[]> {
 
 export default async function ProjectsPage() {
   const projects = await fetchProjects();
-  console.log(projects);
 
   return (
     <section className="mt-24">

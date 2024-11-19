@@ -1,6 +1,7 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { ProjectType } from "@/components/types/type";
 import React from "react";
+import Image from "next/image";
 
 type ProjectListProps = {
   projects: ProjectType[];
@@ -8,8 +9,8 @@ type ProjectListProps = {
 
 export const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   return (
-    <div className="flex h-screen w-full justify-center px-4">
-      <div className="w-full max-w-md">
+    <div className="flex h-screen w-full justify-center">
+      <div className="w-full">
         <TabGroup>
           <TabList className="flex gap-4 justify-center">
             {projects.map(({ type }) => (
@@ -28,22 +29,33 @@ export const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                   {projects.map((project) => (
                     <li
                       key={project.id}
-                      className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5"
+                      className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 "
                     >
-                      <a href="#" className="font-semibold text-white">
+                      <h2 className="font-semibold text-white">
                         <span className="absolute inset-0" />
                         {project.name}
-                      </a>
-                      {/* <ul
-                        className="flex gap-2 text-white/50"
-                        aria-hidden="true"
-                      >
-                        <li>{post.date}</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.commentCount} comments</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.shareCount} shares</li>
-                      </ul> */}
+                      </h2>
+                      <div className="project-img-wrap w-auto h-auto inline-block relative ml-4">
+                        <Image
+                          src={project.imgLink}
+                          alt={project.name}
+                          width={200}
+                          height={200}
+                          className="relative inline-block rounded-lg"
+                        />
+                      </div>
+                      <ul className="flex gap-1 text-white/50 w-full flex-wrap">
+                        {project.technologies.map((technology, index) => {
+                          return (
+                            <li key={index} className="leading-none">
+                              {technology}
+                              {index !== project.technologies.length - 1 && (
+                                <span className="ml-1">&middot;</span>
+                              )}
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </li>
                   ))}
                 </ul>
