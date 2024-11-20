@@ -8,7 +8,7 @@ type ProjectsItemProps = {
 
 export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project }) => {
   return (
-    <li className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 flex flex-col md:flex-row items-stretch project-item md:even:flex-row-reverse project-item odd:pl-5 even:pr-5 gap-5 mb-4 xl:pb-9 xl:even:pr-7 xl:odd:pl-7">
+    <li className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 flex flex-col md:flex-row items-stretch project-item md:even:flex-row-reverse project-item odd:pl-5 even:pr-5 gap-5 mb-4 xl:pb-9 md:even:pr-7 md:odd:pl-7">
       <div className="w-auto h-auto inline-block relative flex-none project-img-wrap self-start">
         <Image
           src={project.imgLink}
