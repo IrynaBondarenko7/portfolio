@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ProjectType } from "@/components/types/type";
-import { ProjectList } from "@/components/ProjectsList";
+import { ProjectsList } from "@/components/ProjectsList";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -23,7 +23,7 @@ export default async function ProjectsPage() {
 
   return (
     <section className="mt-24">
-      <ProjectList projects={projects} />
+      <ProjectsList projectsData={projects} />
     </section>
   );
 }

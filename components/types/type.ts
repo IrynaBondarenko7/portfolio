@@ -21,3 +21,14 @@ export type ProjectType = {
     }
   ];
 };
+
+export type ProjectsItemType = {
+  name: string;
+  gitHubLink: string;
+  livePageLink: string;
+  description: string;
+  technologies: string[];
+  type: string;
+  imgLink: string;
+  id: number;
+};
