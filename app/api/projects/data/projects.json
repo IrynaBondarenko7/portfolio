@@ -23,7 +23,7 @@
         "name": "Barbershop",
         "gitHubLink": "https://github.com/IrynaBondarenko7/barbershop",
         "livePageLink": "https://irynabondarenko7.github.io/barbershop/",
-        "description": "A website with a responsive layout.",
+        "description": "A website with a responsive layout designed for a barbershop business, featuring a header with links to the About, Services and Prices, Barbers, and Contacts sections.",
         "technologies": ["HTML", "SASS", "JavaScript", "Parcel"],
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1731952431/individual-pr-2_qs4e3f.png",
@@ -33,7 +33,7 @@
         "name": "Phonebook",
         "gitHubLink": "https://github.com/IrynaBondarenko7/Phonebook",
         "livePageLink": "https://irynabondarenko7.github.io/Phonebook/",
-        "description": "A simple phonebook connected to Swagger backend API. Functions: You can register, log in, log out, add, remove or filter contacts. ",
+        "description": "A simple phonebook connected to Swagger backend API. Functions: User can register, log in, log out, add, remove or filter contacts. ",
         "technologies": [
           "React",
           "Hooks",

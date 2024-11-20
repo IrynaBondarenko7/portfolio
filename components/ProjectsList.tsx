@@ -29,13 +29,9 @@ export const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                   {projects.map((project) => (
                     <li
                       key={project.id}
-                      className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 "
+                      className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 flex flex-col project-item md:even:flex-row-reverse project-item odd:pl-7 even:pr-7 gap-5 mb-4"
                     >
-                      <h2 className="font-semibold text-white">
-                        <span className="absolute inset-0" />
-                        {project.name}
-                      </h2>
-                      <div className="project-img-wrap w-auto h-auto inline-block relative ml-4">
+                      <div className="w-auto h-auto inline-block relative flex-none project-img-wrap">
                         <Image
                           src={project.imgLink}
                           alt={project.name}
@@ -44,18 +40,44 @@ export const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                           className="relative inline-block rounded-lg"
                         />
                       </div>
-                      <ul className="flex gap-1 text-white/50 w-full flex-wrap">
-                        {project.technologies.map((technology, index) => {
-                          return (
-                            <li key={index} className="leading-none">
-                              {technology}
-                              {index !== project.technologies.length - 1 && (
-                                <span className="ml-1">&middot;</span>
-                              )}
-                            </li>
-                          );
-                        })}
-                      </ul>
+                      <div className="flex-grow flex flex-col gap-4 mt-4">
+                        <h2 className="font-semibold text-white text-base absolute project-title w-[135px] text-center">
+                          {project.name}
+                        </h2>
+                        <p className="text-sm">{project.description}</p>
+                        <ul className="flex gap-1 text-white/50 w-full flex-wrap">
+                          {project.technologies.map((technology, index) => {
+                            return (
+                              <li key={index} className="text-sm leading-none">
+                                {technology}
+                                {index !== project.technologies.length - 1 && (
+                                  <span className="ml-1">&middot;</span>
+                                )}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                        <ul className="flex justify-center gap-5">
+                          <li>
+                            <a
+                              href={project.livePageLink}
+                              className="w-24 text-center  py-1.5 text-xs font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+                              target="blank"
+                            >
+                              Live page
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={project.gitHubLink}
+                              className="w-24 text-center text-xs py-1.5  font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+                              target="blank"
+                            >
+                              GitHub repo
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   ))}
                 </ul>
