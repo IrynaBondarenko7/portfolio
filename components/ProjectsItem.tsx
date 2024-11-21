@@ -15,7 +15,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project }) => {
           alt={project.name}
           width={200}
           height={200}
-          className="relative inline-block rounded-lg xl:w-[300px]"
+          className="relative inline-block rounded-lg xl:w-[300px] xl:h-auto"
         />
       </div>
       <div className="flex-grow flex flex-col gap-4 mt-4">

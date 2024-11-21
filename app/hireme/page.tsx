@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 export default function HireMe() {
   return (
     <section className="mt-24">
-      {" "}
       <CommunicationForm />
     </section>
   );

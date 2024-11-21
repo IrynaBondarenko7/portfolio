@@ -74,16 +74,16 @@ export const CommunicationForm = () => {
     <>
       <PopUp isOpen={isOpen} setIsOpen={setIsOpen} emailError={emailError} />
       <form
-        className="w-full max-w-lg px-4 mx-auto"
+        className="w-full max-w-3xl px-4 mx-auto"
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
       >
         <Fieldset className="space-y-6 rounded-xl bg-white/5 p-6 sm:p-10">
-          <Legend className="text-base/7 font-semibold text-white text-center">
+          <Legend className="text-base/7 xl:text-lg font-semibold text-white text-center">
             Please provide the following details about the job
           </Legend>
           <Field className="relative">
-            <Label className="text-sm/6 font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
               Your name *
             </Label>
             <Input
@@ -98,7 +98,7 @@ export const CommunicationForm = () => {
             </p>
           </Field>
           <Field className="relative">
-            <Label className="text-sm/6 font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
               Company name *
             </Label>
             <Input
@@ -113,7 +113,7 @@ export const CommunicationForm = () => {
             </p>
           </Field>
           <Field className="relative">
-            <Label className="text-sm/6 font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
               Email *
             </Label>
             <Input
@@ -128,7 +128,7 @@ export const CommunicationForm = () => {
             </p>
           </Field>
           <Field>
-            <Label className="text-sm/6 font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
               Suggested position
             </Label>
             <div className="relative">
@@ -152,7 +152,7 @@ export const CommunicationForm = () => {
             </div>
           </Field>
           <Field>
-            <Label className="text-sm/6 font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
               Additional Information
             </Label>
             <Textarea
@@ -166,7 +166,7 @@ export const CommunicationForm = () => {
           </Field>
           <button
             type="submit"
-            className="w-20 mx-auto py-1.5 text-sm/6 font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+            className="w-20 xl:w-24 mx-auto py-1.5 text-sm/6 font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
           >
             Submit
           </button>
