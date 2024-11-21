@@ -3,7 +3,7 @@ import { ProjectType } from "@/components/types/type";
 import { ProjectsList } from "@/components/ProjectsList";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Iryna's Projects",
   description: "React, Next.js, Javascript projects",
 };
 

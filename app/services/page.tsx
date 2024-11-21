@@ -3,7 +3,7 @@ import { FaCode } from "react-icons/fa";
 import { services } from "../../data.json";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Iryna's Services",
   description: "Iryna Bondarenko services",
 };
 
