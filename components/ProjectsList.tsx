@@ -28,8 +28,12 @@ export const ProjectsList: React.FC<ProjectsListProps> = ({ projectsData }) => {
               return (
                 <TabPanel key={type} className="rounded-xl bg-white/5 p-3">
                   <ul>
-                    {sortedProjects.map((project) => (
-                      <ProjectsItem key={project.id} project={project} />
+                    {sortedProjects.map((project, index) => (
+                      <ProjectsItem
+                        key={project.id}
+                        project={project}
+                        index={index}
+                      />
                     ))}
                   </ul>
                 </TabPanel>

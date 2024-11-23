@@ -7,7 +7,7 @@ export const PersonalInfo = () => {
         className="text-4xl xl:text-7xl md:text-5xl font-bona-nova title flex"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       >
         <span className="border-b-2">H</span>ELLO
       </motion.h1>

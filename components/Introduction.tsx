@@ -11,9 +11,9 @@ export const Introduction = () => {
             className="inline-flex flex-col gap-2"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
           >
-            <span className="text-minorTextColor text-6xl md:text-8xl xl:text-9xl font-bona-nova leading-[0.6] md:leading-[0.6] xl:leading-[0.6]">
+            <span className="text-minorTextColor text-6xl md:text-8xl xl:text-9xl font-bona-nova leading-[0.5] md:leading-[0.5] xl:leading-[0.5]">
               07
             </span>
             <span className="font-dancing-script italic md:ml-6 text-minorTextColor text-xl">
@@ -24,7 +24,7 @@ export const Introduction = () => {
             className="rotate-[-90deg] w-64 flex items-center gap-5"
             initial={{ y: 100, opacity: 0, rotate: -90 }}
             animate={{ y: 0, opacity: 1, rotate: -90 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
           >
             <h2 className="font-bona-nova text-lg md:text-2xl xl:text-3xl">
               BIRTHDAY

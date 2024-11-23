@@ -1,22 +1,48 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { ProjectsItemType } from "@/components/types/type";
 
 type ProjectsItemProps = {
   project: ProjectsItemType;
+  index: number;
 };
 
-export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project }) => {
+export const ProjectsItem: React.FC<ProjectsItemProps> = ({
+  project,
+  index,
+}) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
-    <li className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 flex flex-col md:flex-row items-stretch project-item md:even:flex-row-reverse project-item odd:pl-5 even:pr-5 gap-5 mb-4 xl:pb-9 md:even:pr-7 md:odd:pl-7">
+    <li
+      ref={ref}
+      className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5 flex flex-col md:flex-row items-stretch project-item md:even:flex-row-reverse project-item odd:pl-5 even:pr-5 gap-5 mb-4 xl:pb-9 md:even:pr-7 md:odd:pl-7"
+    >
       <div className="w-auto h-auto inline-block relative flex-none project-img-wrap self-start">
-        <Image
-          src={project.imgLink}
-          alt={project.name}
-          width={200}
-          height={200}
-          className="relative inline-block rounded-lg xl:w-[300px] xl:h-auto"
-        />
+        <motion.div
+          initial={{
+            x: index % 2 === 0 ? -15 : 15,
+            y: 20,
+            opacity: 0,
+          }}
+          animate={inView ? { x: 0, y: 0, opacity: 1 } : {}}
+          transition={{
+            duration: 2,
+            ease: "easeOut",
+          }}
+        >
+          <Image
+            src={project.imgLink}
+            alt={project.name}
+            width={200}
+            height={200}
+            className="relative inline-block rounded-lg xl:w-[300px] xl:h-auto"
+          />
+        </motion.div>
       </div>
       <div className="flex-grow flex flex-col gap-4 mt-4">
         <h2 className="font-semibold text-white text-base xl:text-lg absolute md:static project-title w-[105px] sm:w-[130px] md:w-auto text-center">
