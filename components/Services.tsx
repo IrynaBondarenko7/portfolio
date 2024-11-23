@@ -1,8 +1,7 @@
 "use client";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
-
 import { services } from "../data.json";
 
 export const Services = () => {

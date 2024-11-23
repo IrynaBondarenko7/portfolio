@@ -1,9 +1,16 @@
+"use client";
+import { motion } from "framer-motion";
 export const PersonalInfo = () => {
   return (
     <>
-      <h1 className="text-4xl xl:text-7xl md:text-5xl font-bona-nova title flex">
+      <motion.h1
+        className="text-4xl xl:text-7xl md:text-5xl font-bona-nova title flex"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <span className="border-b-2">H</span>ELLO
-      </h1>
+      </motion.h1>
       <h2 className="font-serif  xl:text-xl text-sm">
         My name is Bondarenko. Iryna Bondarenko. I’m a software developer. My
         first language? JavaScript. And my first words? “Hello, world!”. I come
