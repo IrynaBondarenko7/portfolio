@@ -27,10 +27,6 @@ export const Introduction = () => {
       <div className="flex flex-col md:gap-10 gap-4 md:hidden mt-36 bg-secondBg rounded-md">
         <PersonalInfo />
       </div>
-      <div>
-        <div className="styling-block-1"></div>
-        <div className="styling-block-2"></div>
-      </div>
     </section>
   );
 };
