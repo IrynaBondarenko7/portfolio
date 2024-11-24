@@ -30,6 +30,7 @@ export const ProjectsList = () => {
         setProjectsData(data);
         setLoading(false);
       } catch (err: unknown) {
+        console.log(err);
         setError(true);
         setLoading(false);
       }

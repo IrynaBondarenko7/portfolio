@@ -63,7 +63,8 @@ export const CommunicationForm = () => {
             reset();
             setIsOpen(true);
           },
-          (error) => {
+          (err) => {
+            console.log(err);
             setEmailError(true);
             setIsOpen(true);
           }
