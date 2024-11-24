@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section className="mt-24">
+    <section className="mt-20">
       <ProjectsList />
     </section>
   );
