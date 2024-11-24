@@ -1,13 +1,51 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { ProjectsItem } from "./ProjectsItem";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { ProjectType } from "@/components/types/type";
+import { Loading } from "./Loading";
+import { IsError } from "./IsError";
 
-type ProjectsListProps = {
-  projectsData: ProjectType[];
-};
+async function fetchProjects(): Promise<ProjectType[]> {
+  const apiUrl = process.env.NEXT_PUBLIC_PROJECTS_API_KEY!;
+  const response = await fetch(apiUrl);
 
-export const ProjectsList: React.FC<ProjectsListProps> = ({ projectsData }) => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data;
+}
+
+export const ProjectsList = () => {
+  const [projectsData, setProjectsData] = useState<ProjectType[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    const loadProjects = async () => {
+      try {
+        const data = await fetchProjects();
+        setProjectsData(data);
+        setLoading(false);
+      } catch (err: unknown) {
+        setError(true);
+        setLoading(false);
+      }
+    };
+
+    loadProjects();
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
+  if (error) {
+    return <IsError />;
+  }
+
   return (
     <div className="flex h-screen w-full justify-center">
       <div className="w-full">

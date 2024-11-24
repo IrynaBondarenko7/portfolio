@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
-import { icons } from "../data.json";
+import data from "../data.json";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -14,6 +14,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const { icons } = data;
 
 export const metadata: Metadata = {
   title: "Iryna's Portfolio",

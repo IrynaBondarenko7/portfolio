@@ -4,7 +4,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { Button, Dialog, DialogPanel, Transition } from "@headlessui/react";
 import { MdClose } from "react-icons/md";
-import { links } from "../data.json";
+import data from "../data.json";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ export const BurgerMenu = () => {
                 </Button>
                 <div className="flex flex-col justify-center items-center gap-5">
                   <ul className="flex flex-col gap-2 font-bona-nova items-center">
-                    {links.map((link) => (
+                    {data.links.map((link) => (
                       <li className="burger-item" key={link.name}>
                         <Link href={link.path} onClick={closeMenu}>
                           {link.name}

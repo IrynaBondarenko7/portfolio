@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
-import { services } from "../data.json";
+import data from "../data.json";
 
 export const Services = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ export const Services = () => {
   return (
     <div className="flex w-full justify-center xl:w-[900px] mx-auto">
       <ul className="mt-3 w-full grid grid-cols-1 gap-5 md:grid-cols-2 xl:gap-6">
-        {services.map(({ name, description }) => {
+        {data.services.map(({ name, description }) => {
           return (
             <motion.li
               className="rounded-xl bg-white/5 p-3 shadow-sm shadow-white"
