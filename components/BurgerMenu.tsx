@@ -44,15 +44,15 @@ export const BurgerMenu = () => {
               >
                 <Button
                   aria-label="close menu"
-                  className=" ml-auto mb-20 py-1.5 text-sm/6 font-semibold text-white focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+                  className="ml-auto mb-20 py-1.5 px-2 xl:py-2 xl:px-2.5 text-sm/6 xl:text-base font-semibold text-white focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg  transition-all duration-300"
                   onClick={closeMenu}
                 >
-                  <MdClose />
+                  <MdClose className="xl:w-6 xl:h-6" />
                 </Button>
                 <div className="flex flex-col justify-center items-center gap-5">
                   <ul className="flex flex-col gap-2 font-bona-nova items-center">
                     {data.links.map((link) => (
-                      <li className="burger-item" key={link.name}>
+                      <li className="burger-item xl:text-xl" key={link.name}>
                         <Link href={link.path} onClick={closeMenu}>
                           {link.name}
                         </Link>
