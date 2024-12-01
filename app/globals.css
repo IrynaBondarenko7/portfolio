@@ -70,15 +70,15 @@ body {
 
 @media screen and (min-width: 1440px) {
   .home {
-    min-height: 800px;
+    min-height: 810px;
   }
 
   #root {
-    min-height: 800px;
+    min-height: 810px;
   }
   .home::after {
-    width: 945px;
-    right: 232px;
+    width: 943px;
+    right: 227px;
   }
 }
 

@@ -4,7 +4,7 @@ import { PersonalInfo } from "./PersonalInfo ";
 
 export const Introduction = () => {
   return (
-    <section className="mt-28 md:mt-36 xl:mt-52 xl:pb-4 relative">
+    <section className="mt-28 md:mt-36 xl:mt-52 2xl:mt-48 xl:pb-4 relative">
       <div className=" flex items-start justify-start gap-20 md:gap-8 xl:gap-20">
         <div className="flex flex-col  gap-20 xl:gap-36 md:gap-28 items-center w-16 md:w-24 xl:w-32 2xl:w-36">
           <motion.p
@@ -21,7 +21,7 @@ export const Introduction = () => {
             </span>
           </motion.p>
           <motion.div
-            className="rotate-[-90deg] w-64 2xl:w-[570px] flex items-center gap-5"
+            className="rotate-[-90deg] w-64 2xl:w-[400px] flex items-center gap-5"
             initial={{ y: 100, opacity: 0, rotate: -90 }}
             animate={{ y: 0, opacity: 1, rotate: -90 }}
             transition={{ duration: 2 }}
@@ -29,7 +29,7 @@ export const Introduction = () => {
             <h2 className="font-bona-nova text-lg md:text-2xl xl:text-3xl 2xl:text-4xl">
               BIRTHDAY
             </h2>
-            <span className="bg-white h-[2px] w-20 2xl:w-52 block"></span>
+            <span className="bg-white h-[2px] w-20 2xl:w-32 block"></span>
           </motion.div>
         </div>
         <div className="hidden md:flex flex-col gap-10 w-[544px] md:w-[345px] xl:w-[470px] 2xl:w-[495px]">
