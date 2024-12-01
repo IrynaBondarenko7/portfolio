@@ -14,7 +14,7 @@ export const Services = () => {
   }, []);
 
   return (
-    <div className="flex w-full justify-center xl:w-[900px] mx-auto">
+    <div className="flex w-full justify-center xl:w-[900px] 2xl:w-[1200px] mx-auto">
       <ul className="mt-3 w-full grid grid-cols-1 gap-5 md:grid-cols-2 xl:gap-6">
         {data.services.map(({ name, description }) => {
           return (
@@ -27,7 +27,7 @@ export const Services = () => {
               <div className="rounded-md p-3 text-sm/6 transition hover:bg-white/5">
                 <motion.h2
                   layout="position"
-                  className="font-semibold text-white flex gap-4 items-center justify-center text-base xl:text-xl mb-3"
+                  className="font-semibold text-white flex gap-4 items-center justify-center text-base xl:text-xl 2xl:text-3xl mb-3"
                 >
                   <span>{name}</span>
                   <FaCode />
@@ -37,7 +37,7 @@ export const Services = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className="text-sm xl:text-lg"
+                    className="text-sm xl:text-lg 2xl:text-xl"
                   >
                     {description}
                   </motion.p>

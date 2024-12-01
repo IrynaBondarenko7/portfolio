@@ -11,6 +11,7 @@ export default {
       sm: "480px",
       md: "768px",
       xl: "1280px",
+      "2xl": "1440px",
     },
     extend: {
       container: {
@@ -20,6 +21,7 @@ export default {
           sm: "20px",
           md: "25px",
           xl: "30px",
+          "2xl": "30px",
         },
       },
       colors: {

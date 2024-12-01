@@ -68,6 +68,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .home {
+    min-height: 800px;
+  }
+
+  #root {
+    min-height: 800px;
+  }
+  .home::after {
+    width: 945px;
+    right: 232px;
+  }
+}
+
 .burger-item {
   background-image: linear-gradient(to right, #f2f4f4, #f2f4f4 50%, #000 50%);
   background-size: 200% 100%;

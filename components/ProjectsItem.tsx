@@ -45,16 +45,18 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
         </motion.div>
       </div>
       <div className="flex-grow flex flex-col gap-4 mt-4">
-        <h2 className="font-semibold text-white text-base xl:text-lg absolute md:static project-title w-[105px] sm:w-[130px] md:w-auto text-center">
+        <h2 className="font-semibold text-white text-base xl:text-lg 2xl:text-2xl absolute md:static project-title w-[105px] sm:w-[130px] md:w-auto text-center">
           {project.name}
         </h2>
-        <p className="text-sm xl:text-base">{project.description}</p>
+        <p className="text-sm xl:text-base 2xl:text-xl">
+          {project.description}
+        </p>
         <ul className="flex gap-1 text-white/50 w-full flex-wrap">
           {project.technologies.map((technology, index) => {
             return (
               <li
                 key={index}
-                className="text-sm xl:text-base leading-none xl:leading-none"
+                className="text-sm xl:text-base 2xl:text-xl leading-none xl:leading-none"
               >
                 {technology}
                 {index !== project.technologies.length - 1 && (
@@ -68,7 +70,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
           <li>
             <a
               href={project.livePageLink}
-              className="w-24 xl:w-28 text-center  py-1.5 text-xs xl:text-sm font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+              className="w-24 xl:w-28 2xl:w-32 text-center  py-1.5 text-xs xl:text-sm 2xl:text-base font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
               target="blank"
             >
               Live page
@@ -77,7 +79,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
           <li>
             <a
               href={project.gitHubLink}
-              className="w-24 xl:w-28 text-center text-xs py-1.5 xl:text-sm font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+              className="w-24 xl:w-28 2xl:w-32 text-center text-xs py-1.5 xl:text-sm 2xl:text-base font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
               target="blank"
             >
               GitHub repo

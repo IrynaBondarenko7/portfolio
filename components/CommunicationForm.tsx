@@ -80,63 +80,63 @@ export const CommunicationForm = () => {
         onSubmit={handleSubmit(sendEmail)}
       >
         <Fieldset className="space-y-6 rounded-xl bg-white/5 p-6 sm:p-10">
-          <Legend className="text-base/7 xl:text-lg font-semibold text-white text-center">
+          <Legend className="text-base/7 xl:text-lg 2xl:text-xl font-semibold text-white text-center">
             Please provide the following details about the job
           </Legend>
           <Field className="relative">
-            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base 2xl:text-lg font-medium text-white ml-3">
               Your name *
             </Label>
             <Input
               {...register("from_name")}
               className={clsx(
-                "mt-3 block w-full rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 text-white",
+                "mt-3 block w-full rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 xl:text-base 2xl:text-lg text-white",
                 "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
               )}
             />
-            <p className="absolute text-red-700 bottom-[-19px] text-xs">
+            <p className="absolute text-red-700 bottom-[-19px] text-xs 2xl:text-base 2xl:bottom-[-22px]">
               {errors.from_name?.message}
             </p>
           </Field>
           <Field className="relative">
-            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base 2xl:text-lg font-medium text-white ml-3">
               Company name *
             </Label>
             <Input
               {...register("company")}
               className={clsx(
-                "mt-3 block w-full rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 text-white",
+                "mt-3 block w-full rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 xl:text-base 2xl:text-lg text-white",
                 "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
               )}
             />
-            <p className="absolute text-red-700 bottom-[-19px] text-xs">
+            <p className="absolute text-red-700 bottom-[-19px] text-xs 2xl:text-base 2xl:bottom-[-22px]">
               {errors.company?.message}
             </p>
           </Field>
           <Field className="relative">
-            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base 2xl:text-lg font-medium text-white ml-3">
               Email *
             </Label>
             <Input
               {...register("email")}
               className={clsx(
-                "mt-3 block w-full rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 text-white",
+                "mt-3 block w-full rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 xl:text-base 2xl:text-lg text-white",
                 "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
               )}
             />
-            <p className="absolute text-red-700 bottom-[-19px] text-xs">
+            <p className="absolute text-red-700 bottom-[-19px] text-xs 2xl:text-base 2xl:bottom-[-22px]">
               {errors.email?.message}
             </p>
           </Field>
           <Field>
-            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base 2xl:text-lg font-medium text-white ml-3">
               Suggested position
             </Label>
             <div className="relative">
               <Select
                 {...register("position")}
                 className={clsx(
-                  "mt-3 block w-full appearance-none rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 text-white",
+                  "mt-3 block w-full appearance-none rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 xl:text-base 2xl:text-lg text-white",
                   "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25",
                   "*:text-black"
                 )}
@@ -153,13 +153,13 @@ export const CommunicationForm = () => {
             </div>
           </Field>
           <Field>
-            <Label className="text-sm/6 xl:text-base font-medium text-white ml-3">
+            <Label className="text-sm/6 xl:text-base 2xl:text-lg font-medium text-white ml-3">
               Additional Information
             </Label>
             <Textarea
               {...register("message")}
               className={clsx(
-                "mt-3 block w-full resize-none rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 text-white",
+                "mt-3 block w-full resize-none rounded-lg border-none bg-white/5 py-1.5 px-3 text-sm/6 xl:text-base 2xl:text-lg text-white",
                 "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
               )}
               rows={3}
@@ -167,7 +167,7 @@ export const CommunicationForm = () => {
           </Field>
           <button
             type="submit"
-            className="w-20 xl:w-24 mx-auto py-1.5 text-sm/6 font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
+            className="w-20 xl:w-24 2xl:w-32 mx-auto py-1.5 text-sm/6 2xl:text-base font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
           >
             Submit
           </button>

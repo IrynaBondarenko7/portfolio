@@ -19,7 +19,7 @@ export const BurgerMenu = () => {
   return (
     <>
       <button onClick={openMenu} aria-label="open menu">
-        <HiOutlineMenuAlt1 className="w-8 h-8 hover:shadow-sm inline-block hover:shadow-white transition-all duration-300 rounded-sm" />
+        <HiOutlineMenuAlt1 className="w-8 h-8 2xl:w-9 2xl:h-9 hover:shadow-sm inline-block hover:shadow-white transition-all duration-300 rounded-sm" />
       </button>
       <Dialog
         open={isOpen}
