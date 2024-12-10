@@ -72,6 +72,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
               href={project.livePageLink}
               className="w-24 xl:w-28 2xl:w-32 text-center  py-1.5 text-xs xl:text-sm 2xl:text-base font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
               target="blank"
+              rel="noopener noreferrer nofollow"
             >
               Live page
             </a>
@@ -81,6 +82,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
               href={project.gitHubLink}
               className="w-24 xl:w-28 2xl:w-32 text-center text-xs py-1.5 xl:text-sm 2xl:text-base font-semibold text-white border-[1px] border-white hover:border-transparent focus:border-transparent focus:shadow-sm hover:shadow-sm inline-block focus:shadow-white hover:shadow-white rounded-lg px-2 transition-all duration-300"
               target="blank"
+              rel="noopener noreferrer nofollow"
             >
               GitHub repo
             </a>

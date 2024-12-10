@@ -159,3 +159,18 @@ body {
 .css-1dimb5e-singleValue {
   color: #fff !important;
 }
+
+.email-link:hover .email-text {
+  display: inline-block;
+}
+
+.technology-text {
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.technology-item:hover .technology-text {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}

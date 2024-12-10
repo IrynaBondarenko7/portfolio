@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function HireMe() {
   return (
-    <section className="mt-24">
+    <section className="mt-24 mb-5">
       <CommunicationForm />
     </section>
   );
