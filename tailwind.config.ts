@@ -11,7 +11,7 @@ export default {
       sm: "480px",
       md: "768px",
       xl: "1280px",
-      "2xl": "1440px",
+      "2xl": "1600px",
     },
     extend: {
       container: {

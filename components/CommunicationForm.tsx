@@ -79,7 +79,7 @@ export const CommunicationForm = () => {
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
       >
-        <Fieldset className="space-y-6 rounded-xl bg-white/5 p-6 sm:p-10">
+        <Fieldset className="space-y-6 rounded-xl bg-white/5 p-6 sm:p-8">
           <Legend className="text-base/7 xl:text-lg 2xl:text-xl font-semibold text-white text-center">
             Please provide the following details about the job
           </Legend>

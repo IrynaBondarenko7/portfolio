@@ -61,14 +61,16 @@ body {
 @media screen and (min-width: 1280px) {
   .home {
     background-position: 600px 1px;
+    max-width: 1280px;
+    margin: 0 auto;
   }
   .home::after {
-    width: 870px;
-    right: 148px;
+    width: 866px;
+    right: 149px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px) {
   .home {
     min-height: 810px;
   }
@@ -78,7 +80,7 @@ body {
   }
   .home::after {
     width: 943px;
-    right: 227px;
+    right: 126px;
   }
 }
 

@@ -1,5 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 export const PersonalInfo = () => {
   return (
     <>
@@ -19,7 +21,11 @@ export const PersonalInfo = () => {
         honed through a keen eye for detail, relentless motivation, and a knack
         for quick adaptation. I am dedicated to leveraging my skills to drive
         innovative solutions and contribute to impactful projects. <br />
-        Thank you for visiting my portfolio!
+        Thank you for visiting my portfolio! You can have a look at my projects{" "}
+        <Link href="/projects" className="ml-1 border-b-[1px] border-white">
+          here
+        </Link>
+        .
       </h2>
       <h3 className="text-xl md:text-lg xl:text-2xl 2xl:text-3xl font-dancing-script text-center md:text-left">
         P.S. Her Software Development Secret Service

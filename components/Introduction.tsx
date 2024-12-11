@@ -4,7 +4,7 @@ import { PersonalInfo } from "./PersonalInfo ";
 
 export const Introduction = () => {
   return (
-    <section className="mt-28 md:mt-36 xl:mt-52 2xl:mt-48 xl:pb-4 relative">
+    <section className="mt-28 md:mt-36 xl:mt-44 2xl:mt-48 xl:pb-4 relative">
       <div className=" flex items-start justify-start gap-20 md:gap-8 xl:gap-20">
         <div className="flex flex-col  gap-20 xl:gap-36 md:gap-28 items-center w-16 md:w-24 xl:w-32 2xl:w-36">
           <motion.p
