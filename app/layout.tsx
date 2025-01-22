@@ -17,7 +17,7 @@ const geistMono = localFont({
 const { icons } = data;
 
 export const metadata: Metadata = {
-  title: "Iryna's Portfolio",
+  title: "Iryna Bondarenko | Software Developer",
   description: "Portfolio of Iryna Bondarenko",
   icons,
 };
