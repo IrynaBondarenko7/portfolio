@@ -151,10 +151,10 @@ body {
   }
 
   .project-item:nth-child(odd) .project-title {
-    @apply top-16 left-[69%];
+    @apply top-14 left-[69%];
   }
   .project-item:nth-child(even) .project-title {
-    @apply top-16 right-[70%];
+    @apply top-14 right-[70%];
   }
 }
 

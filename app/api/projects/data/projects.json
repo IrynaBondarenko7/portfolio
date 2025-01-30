@@ -110,6 +110,23 @@
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1731952431/individual-pr-6_xhkktc.png",
         "id": 12
+      },
+      {
+        "name": "D&J Landscaping and Handyman Services",
+        "gitHubLink": "https://github.com/IrynaBondarenko7/handyman-services",
+        "livePageLink": "https://garden-landscaping-services.co.uk/",
+        "description": "A bespoke landing page developed for D&J Landscaping and General Handyman Services. The project was commissioned to create a professional and user-friendly website that would highlight their services and engage their customers.",
+        "technologies": [
+          "HTML",
+          "Tailwindcss",
+          "JavaScript",
+          "EmailJS",
+          "Firebase",
+          "Swiper"
+        ],
+        "type": "individual",
+        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1738268035/handyman-services_tasbnb.png",
+        "id": 13
       }
     ]
   },
