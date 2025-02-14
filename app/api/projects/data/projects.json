@@ -112,10 +112,10 @@
         "id": 12
       },
       {
-        "name": "D&J Landscaping and Handyman Services",
+        "name": "Landscaping and Handyman Services",
         "gitHubLink": "https://github.com/IrynaBondarenko7/handyman-services",
-        "livePageLink": "https://garden-landscaping-services.co.uk/",
-        "description": "A bespoke landing page developed for D&J Landscaping and General Handyman Services. The project was commissioned to create a professional and user-friendly website that would highlight their services and engage their customers.",
+        "livePageLink": "",
+        "description": "A bespoke landing page developed for Landscaping and General Handyman Services. The project was commissioned to create a professional and user-friendly website that would highlight their services and engage their customers.",
         "technologies": [
           "HTML",
           "Tailwindcss",
