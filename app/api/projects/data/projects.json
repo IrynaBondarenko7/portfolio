@@ -110,23 +110,6 @@
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1731952431/individual-pr-6_xhkktc.png",
         "id": 12
-      },
-      {
-        "name": "Landscaping and Handyman Services",
-        "gitHubLink": "https://github.com/IrynaBondarenko7/handyman-services",
-        "livePageLink": "",
-        "description": "A bespoke landing page developed for Landscaping and General Handyman Services. The project was commissioned to create a professional and user-friendly website that would highlight their services and engage their customers.",
-        "technologies": [
-          "HTML",
-          "Tailwindcss",
-          "JavaScript",
-          "EmailJS",
-          "Firebase",
-          "Swiper"
-        ],
-        "type": "individual",
-        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1738268035/handyman-services_tasbnb.png",
-        "id": 13
       }
     ]
   },
@@ -243,7 +226,7 @@
         "name": "Hidden Gems APP",
         "gitHubLink": "https://github.com/flynnjim/hidden-gems-frontend",
         "livePageLink": "https://hidden-gems-frontend.vercel.app/",
-        "description": "Full stack web app that allows users to discover, review, and comment on hidden gems (places) using a Next.js frontend and a Node.js backend. Users can explore hidden gems, create new hidden gems, submit reviews, and engage with the platform through dynamic content rendering.",
+        "description": "Full stack web app that allows users to discover, review, and comment on hidden gems (places) using a Next.js frontend and a Node.js backend. Users can explore hidden gems, create new hidden gems, submit reviews, and engage with the platform through dynamic content rendering. (Please note that the site is hosted on free hosting, so it may take some time to load).",
         "technologies": [
           "Next.js",
           "Tailwindcss",
