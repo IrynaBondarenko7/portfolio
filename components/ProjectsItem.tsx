@@ -50,6 +50,9 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
         </h2>
         <p className="text-sm xl:text-base 2xl:text-xl">
           {project.description}
+          <span className="ml-1 text-orange-300">
+            {project.descriptionWarning}
+          </span>
         </p>
         <ul className="flex gap-1 text-white/50 w-full flex-wrap">
           {project.technologies.map((technology, index) => {

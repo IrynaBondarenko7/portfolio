@@ -7,6 +7,7 @@
         "gitHubLink": "https://github.com/IrynaBondarenko7/masseur_website",
         "livePageLink": "https://massage-therapist-kyiv.netlify.app/",
         "description": "Massage Therapist portfolio with 4 section. Functions: there is a Book Appointment button on the homepage that opens a modal window with a feedback form. You can also view procedures and materials.",
+        "descriptionWarning": "",
         "technologies": [
           "HTML",
           "SASS",
@@ -24,6 +25,7 @@
         "gitHubLink": "https://github.com/IrynaBondarenko7/barbershop",
         "livePageLink": "https://irynabondarenko7.github.io/barbershop/",
         "description": "A website with a responsive layout designed for a barbershop business, featuring a header with links to the About, Services and Prices, Barbers, and Contacts sections.",
+        "descriptionWarning": "",
         "technologies": ["HTML", "SASS", "JavaScript", "Parcel"],
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1731952431/individual-pr-2_qs4e3f.png",
@@ -34,6 +36,7 @@
         "gitHubLink": "https://github.com/IrynaBondarenko7/Phonebook",
         "livePageLink": "https://irynabondarenko7.github.io/Phonebook/",
         "description": "A simple phonebook connected to Swagger backend API. Functions: User can register, log in, log out, add, remove or filter contacts. ",
+        "descriptionWarning": "",
         "technologies": [
           "React",
           "Hooks",
@@ -53,6 +56,7 @@
         "gitHubLink": "https://github.com/IrynaBondarenko7/confetti",
         "livePageLink": "https://balloons-shop-confetti.netlify.app/",
         "description": "Confetti Store Landing Page, a React-based landing page for a balloon shop. This landing page incorporates various features and functionalities to create an engaging and responsive user experience. The responsive layout spans from mobile (360px to 480px) with a flexible design, to tablet (768px), and desktop (1280px)",
+        "descriptionWarning": "",
         "technologies": [
           "React",
           "Hooks",
@@ -71,6 +75,7 @@
         "gitHubLink": "https://github.com/IrynaBondarenko7/carp-travel",
         "livePageLink": "https://carp-travel-alpha.vercel.app/",
         "description": "CarpTravel, your go-to platform for thrilling adventures in the Carpathian Mountains. Whether you're into rock climbing, hot air ballooning, skydiving, rafting, or ATVS Traveling has got you covered. Explore the adrenaline-packed experiences waiting for you in the heart of nature. Adaptive and cross-browser responsive design, mobile starts from 360px, tablet from 768px, desktop from 1280px",
+        "descriptionWarning": "",
         "technologies": [
           "Next.js",
           "TypeScript",
@@ -89,6 +94,7 @@
         "gitHubLink": "https://github.com/IrynaBondarenko7/news_App",
         "livePageLink": "https://iryna-bd-trend-news.netlify.app/",
         "description": "Full-stack responsive app with React front end and Node.js back end. Users can view news articles, leave and delete comments, and sort articles by topic, date, number of comments, and votes.",
+        "descriptionWarning": "Please note that the site is hosted on free hosting, so it may take some time to load.",
         "technologies": [
           "React",
           "Routers",
@@ -103,13 +109,36 @@
           "Pg - format",
           "Jest",
           "Supertest",
-          "React-select",
           "React-hot-toast",
-          "Headlessui"
+          "Headlessui",
+          "Tailwindcss"
         ],
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1731952431/individual-pr-6_xhkktc.png",
         "id": 12
+      },
+      {
+        "name": "Chat APP",
+        "gitHubLink": "https://github.com/IrynaBondarenko7/chat-app",
+        "livePageLink": "https://chat-app-xrkl.onrender.com/",
+        "description": "Chat App is a modern real-time messaging application built with the MERN stack, Socket.io, and modern UI libraries. Users can register, log in, view a list of online and offline contacts, select a chat partner, and send messages, all synchronized in real-time via WebSockets.",
+        "descriptionWarning": "Please note that the site is hosted on free hosting, so it may take some time to load.",
+        "technologies": [
+          "React",
+          "React icons",
+          "MongoDB",
+          "Node.js",
+          "Express.js",
+          "Socket.io",
+          "Zustand",
+          "JWT",
+          "Tailwindcss",
+          "Daisyui",
+          "Headlessui"
+        ],
+        "type": "individual",
+        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1741868843/Screenshot_from_2025-03-13_12-23-51_pfwybj.png",
+        "id": 13
       }
     ]
   },
@@ -121,6 +150,7 @@
         "gitHubLink": "https://github.com/yulka-pulka/team5-mimino",
         "livePageLink": "https://yulka-pulka.github.io/team5-mimino/",
         "description": "Restaurant/hotel complex website with responsive layout. Functions: room reservation modal window, buttons animation, room page (amenities in the room).",
+        "descriptionWarning": "",
         "technologies": [
           "HTML",
           "SASS",
@@ -138,6 +168,7 @@
         "gitHubLink": "https://github.com/dmitryberesten/filmoteka",
         "livePageLink": "https://dmitryberesten.github.io/filmoteka/",
         "description": "Application for choosing a movie and saving in library. Functions: add to watched, add to queue buttons and saving to local storage.",
+        "descriptionWarning": "",
         "technologies": [
           "HTML",
           "SASS",
@@ -159,6 +190,7 @@
         "gitHubLink": "https://github.com/svrphoenix/project-group3fe",
         "livePageLink": "https://svrphoenix.github.io/project-group3fe/",
         "description": "Full Stack app with user registration. Functions: The registered user has access to the account page, where user can edit the profile, to the calendar page, add tasks for any day of the week, and the statistics page, where it is possible to view the completion of tasks. There is also an opportunity to leave a review in the app.",
+        "descriptionWarning": "",
         "technologies": [
           "React",
           "Hooks ",
@@ -180,6 +212,7 @@
         "gitHubLink": "https://github.com/SoftRyzen-internship/flora-decor",
         "livePageLink": "https://flora-decor.vercel.app/",
         "description": "The web application Flora Decor was created for a Ukrainian indoor plant store. The website features a responsive design that adjusts to various screen sizes, including mobile phones (from 360px to 480px), tablets (768px), and desktops (1440px). All images on the website have support for Retina displays, ensuring high-quality visuals for users with high-resolution screens.The goods section and reviews have the capability to be edited through the admin panel in Sanity CMS.",
+        "descriptionWarning": "",
         "technologies": [
           "Next.js",
           "Sanity",
@@ -204,6 +237,7 @@
         "gitHubLink": "https://github.com/SoftRyzen-internship/career-consultant",
         "livePageLink": "https://career-consultations.vercel.app/",
         "description": "Career consultant is a web application aimed at career counseling for Ukrainians who want to receive a clear action plan, practical tools, and support. Website consists from 2 pages: Main & Privacy Policy.The layout is responsive and cross-browser compatible - mobile starts from 360px, tablet from 768px, desktop from 1280px. The layout from 360px to 480px is fluid (stretchable). Used mobile-first approach.",
+        "descriptionWarning": "",
         "technologies": [
           "Next.js",
           "Sanity",
@@ -225,8 +259,9 @@
       {
         "name": "Hidden Gems APP",
         "gitHubLink": "https://github.com/flynnjim/hidden-gems-frontend",
-        "livePageLink": "https://hidden-gems-frontend.vercel.app/",
-        "description": "Full stack web app that allows users to discover, review, and comment on hidden gems (places) using a Next.js frontend and a Node.js backend. Users can explore hidden gems, create new hidden gems, submit reviews, and engage with the platform through dynamic content rendering. (Please note that the site is hosted on free hosting, so it may take some time to load).",
+        "livePageLink": "https://hidden-gems-app-frontend.vercel.app/",
+        "description": "Full stack web app that allows users to discover, review, and comment on hidden gems (places) using a Next.js frontend and a Node.js backend. Users can explore hidden gems, create new hidden gems, submit reviews, and engage with the platform through dynamic content rendering.",
+        "descriptionWarning": "Please note that the site is hosted on free hosting, so it may take some time to load.",
         "technologies": [
           "Next.js",
           "Tailwindcss",

@@ -18,6 +18,7 @@ export type ProjectType = {
       type: string;
       imgLink: string;
       id: number;
+      descriptionWarning: string;
     }
   ];
 };
@@ -31,4 +32,5 @@ export type ProjectsItemType = {
   type: string;
   imgLink: string;
   id: number;
+  descriptionWarning: string;
 };
