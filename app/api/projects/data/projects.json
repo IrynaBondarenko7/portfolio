@@ -118,6 +118,24 @@
         "id": 12
       },
       {
+        "name": "Landscaping and Handyman Services",
+        "gitHubLink": "https://github.com/IrynaBondarenko7/handyman-services",
+        "livePageLink": "https://landscaping-and-handyman-services.netlify.app/",
+        "description": "A bespoke landing page developed for Landscaping and General Handyman Services. The project was commissioned to create a professional and user-friendly website that would highlight their services and engage their customers.",
+        "technologies": [
+          "HTML",
+          "Tailwindcss",
+          "JavaScript",
+          "EmailJS",
+          "Firebase",
+          "Swiper",
+          "Contentful CMS"
+        ],
+        "type": "individual",
+        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1743671889/15_sr5m27.png",
+        "id": 13
+      },
+      {
         "name": "Chat APP",
         "gitHubLink": "https://github.com/IrynaBondarenko7/chat-app",
         "livePageLink": "https://chat-app-xrkl.onrender.com/",
@@ -138,7 +156,7 @@
         ],
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1741868843/Screenshot_from_2025-03-13_12-23-51_pfwybj.png",
-        "id": 13
+        "id": 14
       }
     ]
   },
