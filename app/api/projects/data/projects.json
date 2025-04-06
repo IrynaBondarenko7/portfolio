@@ -3,24 +3,6 @@
     "type": "Individual",
     "projects": [
       {
-        "name": "Masseur website",
-        "gitHubLink": "https://github.com/IrynaBondarenko7/masseur_website",
-        "livePageLink": "https://massage-therapist-kyiv.netlify.app/",
-        "description": "Massage Therapist portfolio with 4 section. Functions: there is a Book Appointment button on the homepage that opens a modal window with a feedback form. You can also view procedures and materials.",
-        "descriptionWarning": "",
-        "technologies": [
-          "HTML",
-          "SASS",
-          "JavaScript",
-          "Parcel",
-          "AOS",
-          "Formspree"
-        ],
-        "type": "individual",
-        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1732015167/individual-pr-1_ndjqeb.png",
-        "id": 7
-      },
-      {
         "name": "Barbershop",
         "gitHubLink": "https://github.com/IrynaBondarenko7/barbershop",
         "livePageLink": "https://irynabondarenko7.github.io/barbershop/",
@@ -157,6 +139,34 @@
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1741868843/Screenshot_from_2025-03-13_12-23-51_pfwybj.png",
         "id": 14
+      },
+      {
+        "name": "Recipe blog",
+        "gitHubLink": "https://github.com/IrynaBondarenko7/recipe-blog",
+        "livePageLink": "https://angular-recipe-blog.netlify.app/",
+        "description": "This is a recipe blog app where the homepage features 'Featured Posts' and 'Latest Posts.' Users can browse recipes by categories, and when viewing an individual recipe, they are presented with recommendations for similar recipes within the same category. Recipes can be edited and published through an easy-to-use dashboard.",
+        "descriptionWarning": "",
+        "technologies": ["Angular", "Bootstrap", "Firebase"],
+        "type": "individual",
+        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1743953406/Screenshot_from_2025-04-06_16-29-49_njwkmy.png",
+        "id": 15
+      },
+      {
+        "name": "Recipe blog Dashboard",
+        "gitHubLink": "https://github.com/IrynaBondarenko7/ang-blog-dashboard",
+        "livePageLink": "https://ang-recipes-blog-dashboard.netlify.app/",
+        "description": "This is a dashboard for creating and editing content for a recipe blog, featuring two sections for editing categories and posts. When creating content, users are presented with a form to fill in the information, along with a list of available categories and corresponding posts for easy management.",
+        "descriptionWarning": "",
+        "technologies": [
+          "Angular",
+          "Bootstrap",
+          "Firebase",
+          "ngx toastr",
+          "Kolkov Angular Editor"
+        ],
+        "type": "individual",
+        "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1743953862/Screenshot_from_2025-04-06_16-37-31_rktm2p.png",
+        "id": 16
       }
     ]
   },
