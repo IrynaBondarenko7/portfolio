@@ -146,7 +146,7 @@
         "livePageLink": "https://angular-recipe-blog.netlify.app/",
         "description": "This is a recipe blog app where the homepage features 'Featured Posts' and 'Latest Posts.' Users can browse recipes by categories, and when viewing an individual recipe, they are presented with recommendations for similar recipes within the same category. Recipes can be edited and published through an easy-to-use dashboard.",
         "descriptionWarning": "",
-        "technologies": ["Angular", "Bootstrap", "Firebase"],
+        "technologies": ["Angular", "TypeScript", "Bootstrap", "Firebase"],
         "type": "individual",
         "imgLink": "https://res.cloudinary.com/dojqjqphi/image/upload/v1743953406/Screenshot_from_2025-04-06_16-29-49_njwkmy.png",
         "id": 15
@@ -159,6 +159,7 @@
         "descriptionWarning": "",
         "technologies": [
           "Angular",
+          "TypeScript",
           "Bootstrap",
           "Firebase",
           "ngx toastr",
